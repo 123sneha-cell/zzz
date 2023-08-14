@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<form method="post" action="edit_profile" enctype="multipart/form-data">
+    {% for i in u %}
+    {% csrf_token %}
+    <table>
+        <tr>
+            <th>Username</th>
+            <td><input type="text" name="uname" value="{{u.username}}"></td>
+        </tr>
+        <tr>
+            <th>Firstname</th>
+            <td><input type="number" name="fname" value="{{u.firstname}}"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td><input type="text" name="gen" value="{{u.gender}}"></td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td><input type="number" name="phn" value="{{u.phone}}"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="eml" value="{{u.email}}"></td>
+        </tr>
+        <tr>
+            <th>Place</th>
+            <td><input type="text" name="plc" value="{{u.place}}"></td>
+        </tr>
+        <tr>
+            <th>Photo</th>
+            <td><input type="file" name="img"></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><input type="text" name="addr" value="{{u.address}}"></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="Edit"></td>
+        </tr>
+    </table>
+    {% endfor %}
+</form>
+</table>
+</body>
+</html>

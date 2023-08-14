@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<form method="post" action="" enctype="multipart/form-data">
+    {% for i in c %}
+    {% csrf_token %}
+    <table>
+        <tr>
+            <th>Cake</th>
+            <td><input type="text" name="cname" value="{{i.cake_name}}"></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td><input type="number" name="qntity" value="{{i.cake_name}}"></td>
+        </tr>
+        <tr>
+            <th>Flavour</th>
+            <td><input type="text" name="flvr" value="{{i.cake_name}}"></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><input type="number" name="prc" value="{{i.cake_name}}"></td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><input type="file" name="img"></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="ADD"></td>
+        </tr>
+    </table>
+    {% endfor %}
+</form>
+</table>
+</body>
+</html>

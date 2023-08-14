@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <th>Cake</th>
+            <td><input type="text" name="cname"></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td><input type="number" name="qntity"></td>
+        </tr>
+        <tr>
+            <th>Flavour</th>
+            <td><input type="text" name="flvr"></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><input type="number" name="prc"></td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><input type="file" name="img"></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="ADD"></td>
+        </tr>
+    </table>
+</form>
+{% if c %}
+<table>
+    <tr>
+        <th>Cake</th>
+        <th>Quantity</th>
+        <th>Flavour</th>
+        <th>Price</th>
+    </tr>
+    {% for i in c %}
+    <tr>
+        <td>{{i.cake_name}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.flavour}}</td>
+        <td>{{i.image}}</td>
+        <td><a href="update/{{i.id}}">Edit</a></td>
+        <td><a href="delete/{{i.id}}">Remove</a></td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
