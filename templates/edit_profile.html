@@ -1,54 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<table>
-<form method="post" action="edit_profile" enctype="multipart/form-data">
-    {% for i in u %}
+{% extends 'uhome.html' %}
+
+{% block content %}
+<center>
+<table style="margin-top:70px;">
+<form method="post" action="edit_profile" enctype="multipart/form-data" >
+
     {% csrf_token %}
     <table>
         <tr>
             <th>Username</th>
-            <td><input type="text" name="uname" value="{{u.username}}"></td>
+            <td><input type="text" name="uname" value="{{u.username}}" class="form-control"></td>
         </tr>
         <tr>
             <th>Firstname</th>
-            <td><input type="number" name="fname" value="{{u.firstname}}"></td>
+            <td><input type="text" name="fname" value="{{u.firstname}}" class="form-control"></td>
         </tr>
         <tr>
             <th>Gender</th>
-            <td><input type="text" name="gen" value="{{u.gender}}"></td>
+            <td><input type="text" name="gen" value="{{u.gender}}" class="form-control"></td>
         </tr>
         <tr>
             <th>Phone</th>
-            <td><input type="number" name="phn" value="{{u.phone}}"></td>
+            <td><input type="number" name="phn" value="{{u.phone}}" class="form-control"></td>
         </tr>
         <tr>
             <th>Email</th>
-            <td><input type="email" name="eml" value="{{u.email}}"></td>
+            <td><input type="email" name="eml" value="{{u.email}}" class="form-control"></td>
         </tr>
         <tr>
             <th>Place</th>
-            <td><input type="text" name="plc" value="{{u.place}}"></td>
+            <td><input type="text" name="plc" value="{{u.place}}" class="form-control"></td>
         </tr>
         <tr>
             <th>Photo</th>
+            <td><img src="{{u.photo.url}}" alt="photo"  height="100" width="100" ></td>
             <td><input type="file" name="img"></td>
         </tr>
         <tr>
             <th>Address</th>
-            <td><input type="text" name="addr" value="{{u.address}}"></td>
+            <td><input type="text" name="addr" value="{{u.address}}" class="form-control"></td>
         </tr>
         <tr>
 
-            <td><input type="submit" value="Edit"></td>
+            <td><input type="submit" value="Edit" class="btn btn-success"></td>
         </tr>
     </table>
-    {% endfor %}
+
 </form>
 </table>
-</body>
-</html>
+    </center>
+{% endblock content %}

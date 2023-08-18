@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Above 2000 cakes</h1>
+<table>
+    <tr>
+        <th>Cake</th>
+        <th>Quantity</th>
+        <th>Flavour</th>
+        <th>Price</th>
+    </tr>
+    {% for i in c %}
+    {% if i.price > 2000 %}
+    <tr>
+        <td>{{i.cake_name}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.flavour}}</td>
+        <td>{{i.price}}</td>
+        <img src="{{i.image.url}}" alt="photo"  height="300" width="250">
+
+
+    </tr>
+{% endif %}
+{% endfor %}
+
+</table>
+</body>
+</html>

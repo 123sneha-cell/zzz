@@ -1,28 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{% for i in c %}
+{% extends 'uhome.html' %}
+
+{% block content %}
+<center>
+    <table style="margin-top:50px;">
+<form method="post" action="search">
+    {% csrf_token %}
+    <tr>
+    <th>Choose a flavour:</th>
+    <td><select name="flv">
+
+        {% for i in q %}
+        <option value="{{i.flavour}}">{{i.flavour}}</option>
+        {% endfor %}
+        </select>
+    </td>
+    </tr>
+    <tr>
+    <td align="center" colspan="2"><input type="submit" value="Search"></td>
+    </tr>
+</form>
+        </table>
+{% if q %}
+<table style="margin-top:50px;">
+    <tr>
+        <th>Cake</th>
+        <th>Quantity</th>
+        <th>Flavour</th>
+        <th>Price</th>
+        <th>Image</th>
+    </tr>
+    {% for i in q %}
+    <tr>
+        <td>{{i.cake_name}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.flavour}}</td>
+        <td>{{i.price}}</td>
+        <td><img src="{{i.image.url}}" alt="photo"  height="300" width="250"></td>
+
+
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
 <table>
+    {% if s %}
     <tr>
         <th>Cake</th>
         <th>Quantity</th>
         <th>Flavour</th>
         <th>Price</th>
     </tr>
-    {% for i in c %}
+
     <tr>
-        <td>{{i.cake_name}}</td>
-        <td>{{i.quantity}}</td>
-        <td>{{i.flavour}}</td>
-        <td>{{i.image}}</td>
-        <td><a href="">Buy</a></td>
+        <td>{{s.cake_name}}</td>
+        <td>{{s.quantity}}</td>
+        <td>{{s.flavour}}</td>
+        <img src="{{s.image.url}}" alt="photo"  height="300" width="250">
+        <td><a href="">Order</a></td>
 
     </tr>
-    {% endfor %}
+
 </table>
-</body>
-</html>
+{% endif %}
+<h3><a href="more">Above 2000 cakes</a></h3>
+</center>
+{% endblock content %}
