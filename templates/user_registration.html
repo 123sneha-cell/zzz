@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'header.html' %}
+
+{% block content %}
+<center>
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    <table>
+    <table class="table table-striped" style="width:50%;">
     <tr>
-        <th>Username</th>
+        <th >Username</th>
         <td><input type="text" name="uname"></td>
     </tr>
     <tr>
-        <th>First name</th>
+        <th >First name</th>
         <td><input type="text" name="fname"></td>
     </tr>
     <tr>
-        <th>gender</th>
+        <th >gender</th>
         <td><input type="text" name="gen"></td>
     </tr>
     <tr>
@@ -41,11 +38,11 @@
         <td><input type="text" name="addrs"></td>
     </tr>
     <tr>
-        <td><input type="submit" value="Register"></td>
+        <td align="center" colspan="2"><input type="submit" value="Register" class="btn btn-success"></td>
     </tr>
 
 
 </table>
     </form>
-</body>
-</html>
+</center>
+{% endblock content %}

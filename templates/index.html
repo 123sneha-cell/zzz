@@ -1,1480 +1,508 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
+<html lang="en">
 {% load static %}
-<html lang="zxx">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Cake Template">
-    <meta name="keywords" content="Cake, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cake | Template</title>
+    <meta charset="utf-8">
+    <title>CakeZone - Cake Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="static/css/flaticon.css" type="text/css">
-    <link rel="stylesheet" href="static/css/barfiller.css" type="text/css">
-    <link rel="stylesheet" href="static/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="static/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="static/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="static/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="static/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="static/css/style.css" type="text/css">
-</head>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="offcanvas__cart">
-            <div class="offcanvas__cart__links">
-                <a href="#" class="search-switch"><img src="static/img/icon/search.png" alt=""></a>
-                <a href="#"><img src="static/img/icon/heart.png" alt=""></a>
-            </div>
-            <div class="offcanvas__cart__item">
-                <a href="#"><img src="static/img/icon/cart.png" alt=""> <span>0</span></a>
-                <div class="cart__price">Cart: <span>$0.00</span></div>
-            </div>
-        </div>
-        <div class="offcanvas__logo">
-            <a href="./index.html"><img src="static/img/logo.png" alt=""></a>
-        </div>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__option">
-            <ul>
-                <li>USD <span class="arrow_carrot-down"></span>
-                    <ul>
-                        <li>EUR</li>
-                        <li>USD</li>
-                    </ul>
-                </li>
-                <li>ENG <span class="arrow_carrot-down"></span>
-                    <ul>
-                        <li>Spanish</li>
-                        <li>ENG</li>
-                    </ul>
-                </li>
-                <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="header__top__inner">
-                            <div class="header__top__left">
-                                <ul>
-                                    <li>USD <span class="arrow_carrot-down"></span>
-                                        <ul>
-                                            <li>EUR</li>
-                                            <li>USD</li>
-                                        </ul>
-                                    </li>
-                                    <li>ENG <span class="arrow_carrot-down"></span>
-                                        <ul>
-                                            <li>Spanish</li>
-                                            <li>ENG</li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
-                                </ul>
-                            </div>
-                            <div class="header__logo">
-                                <a href="./index.html"><img src="static/img/logo.png" alt=""></a>
-                            </div>
-                            <div class="header__top__right">
-                                <div class="header__top__right__links">
-                                    <a href="#" class="search-switch"><img src="static/img/icon/search.png" alt=""></a>
-                                    <a href="#"><img src="static/img/icon/heart.png" alt=""></a>
-                                </div>
-                                <div class="header__top__right__cart">
-                                    <a href="#"><img src="static/img/icon/cart.png" alt=""> <span>0</span></a>
-                                    <div class="cart__price">Cart: <span>$0.00</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="canvas__open"><i class="fa fa-bars"></i></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="header__menu mobile-menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="logn">Login</a></li>
-                            <li><a href="user_reg">User registration</a>
-                                <ul class="dropdown">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./wisslist.html">Wisslist</a></li>
-                                    <li><a href="./Class.html">Class</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="static/img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="hero__text">
-                                <h2>Making your life sweeter one bite at a time!</h2>
-                                <a href="#" class="primary-btn">Our cakes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="static/img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="hero__text">
-                                <h2>Making your life sweeter one bite at a time!</h2>
-                                <a href="#" class="primary-btn">Our cakes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- About Section Begin -->
-    <section class="about spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="about__text">
-                        <div class="section-title">
-                            <span>About Cake shop</span>
-                            <h2>Cakes and bakes from the house of Queens!</h2>
-                        </div>
-                        <p>The "Cake Shop" is a Jordanian Brand that started as a small family business. The owners are
-                        Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="about__bar">
-                        <div class="about__bar__item">
-                            <p>Cake design</p>
-                            <div id="bar1" class="barfiller">
-                                <div class="tipWrap"><span class="tip"></span></div>
-                                <span class="fill" data-percentage="95"></span>
-                            </div>
-                        </div>
-                        <div class="about__bar__item">
-                            <p>Cake Class</p>
-                            <div id="bar2" class="barfiller">
-                                <div class="tipWrap"><span class="tip"></span></div>
-                                <span class="fill" data-percentage="80"></span>
-                            </div>
-                        </div>
-                        <div class="about__bar__item">
-                            <p>Cake Recipes</p>
-                            <div id="bar3" class="barfiller">
-                                <div class="tipWrap"><span class="tip"></span></div>
-                                <span class="fill" data-percentage="90"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Categories Section Begin -->
-    <div class="categories">
-        <div class="container">
-            <div class="row">
-                <div class="categories__slider owl-carousel">
-                    <div class="categories__item">
-                        <div class="categories__item__icon">
-                            <span class="flaticon-029-cupcake-3"></span>
-                            <h5>Cupcake</h5>
-                        </div>
-                    </div>
-                    <div class="categories__item">
-                        <div class="categories__item__icon">
-                            <span class="flaticon-034-chocolate-roll"></span>
-                            <h5>Butter</h5>
-                        </div>
-                    </div>
-                    <div class="categories__item">
-                        <div class="categories__item__icon">
-                            <span class="flaticon-005-pancake"></span>
-                            <h5>Red Velvet</h5>
-                        </div>
-                    </div>
-                    <div class="categories__item">
-                        <div class="categories__item__icon">
-                            <span class="flaticon-030-cupcake-2"></span>
-                            <h5>Biscuit</h5>
-                        </div>
-                    </div>
-                    <div class="categories__item">
-                        <div class="categories__item__icon">
-                            <span class="flaticon-006-macarons"></span>
-                            <h5>Donut</h5>
-                        </div>
-                    </div>
-                    <div class="categories__item">
-                        <div class="categories__item__icon">
-                            <span class="flaticon-006-macarons"></span>
-                            <h5>Cupcake</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Categories Section End -->
-
-    <!-- Product Section Begin -->
-    <section class="product spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-1.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Dozen Cupcakes</a></h6>
-                            <div class="product__item__price">$32.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-2.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Cookies and Cream</a></h6>
-                            <div class="product__item__price">$30.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-3.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Gluten Free Mini Dozen</a></h6>
-                            <div class="product__item__price">$31.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-4.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Cookie Dough</a></h6>
-                            <div class="product__item__price">$25.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-5.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Vanilla Salted Caramel</a></h6>
-                            <div class="product__item__price">$05.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-6.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">German Chocolate</a></h6>
-                            <div class="product__item__price">$14.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-7.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Dulce De Leche</a></h6>
-                            <div class="product__item__price">$32.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="static/img/shop/product-8.jpg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Mississippi Mud</a></h6>
-                            <div class="product__item__price">$08.00</div>
-                            <div class="cart_add">
-                                <a href="#">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Product Section End -->
-
-    <!-- Class Section Begin -->
-    <section class="class spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="class__form">
-                        <div class="section-title">
-                            <span>Class cakes</span>
-                            <h2>Made from your <br />own hands</h2>
-                        </div>
-                        <form action="#">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Phone">
-                            <select>
-                                <option value="">Studying Class</option>
-                                <option value="">Writting Class</option>
-                                <option value="">Reading Class</option>
-                            </select>
-                            <input type="text" placeholder="Type your requirements">
-                            <button type="submit" class="site-btn">registration</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="class__video set-bg" data-setbg="img/class-video.jpg">
-                <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw&list=RD8PJ3_p7VqHw&start_radio=1"
-                class="play-btn video-popup"><i class="fa fa-play"></i></a>
-            </div>
-        </div>
-    </section>
-    <!-- Class Section End -->
-
-    <!-- Team Section Begin -->
-    <section class="team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7">
-                    <div class="section-title">
-                        <span>Our team</span>
-                        <h2>Sweet Baker </h2>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-5">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn">Join Us</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="static/img/team/team-1.jpg">
-                        <div class="team__item__text">
-                            <h6>Randy Butler</h6>
-                            <span>Decorater</span>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="static/img/team/team-2.jpg">
-                        <div class="team__item__text">
-                            <h6>Randy Butler</h6>
-                            <span>Decorater</span>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="static/img/team/team-3.jpg">
-                        <div class="team__item__text">
-                            <h6>Randy Butler</h6>
-                            <span>Decorater</span>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="static/img/team/team-4.jpg">
-                        <div class="team__item__text">
-                            <h6>Randy Butler</h6>
-                            <span>Decorater</span>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Testimonial Section Begin -->
-    <section class="testimonial spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title">
-                        <span>Testimonial</span>
-                        <h2>Our client say</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="testimonial__slider owl-carousel">
-                    <div class="col-lg-6">
-                        <div class="testimonial__item">
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="static/img/testimonial/ta-1.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
-                                </div>
-                            </div>
-                            <div class="rating">
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star-half_alt"></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testimonial__item">
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="static/img/testimonial/ta-2.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
-                                </div>
-                            </div>
-                            <div class="rating">
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star-half_alt"></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testimonial__item">
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-1.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Ophelia Nunez</h5>
-                                    <span>London</span>
-                                </div>
-                            </div>
-                            <div class="rating">
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star-half_alt"></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testimonial__item">
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="static/img/testimonial/ta-2.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
-                                </div>
-                            </div>
-                            <div class="rating">
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star-half_alt"></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testimonial__item">
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="static/img/testimonial/ta-1.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Ophelia Nunez</h5>
-                                    <span>London</span>
-                                </div>
-                            </div>
-                            <div class="rating">
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star-half_alt"></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testimonial__item">
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="static/img/testimonial/ta-2.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Kerry D.Silva</h5>
-                                    <span>New york</span>
-                                </div>
-                            </div>
-                            <div class="rating">
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star"></span>
-                                <span class="icon_star-half_alt"></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua viverra lacus vel facilisis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial Section End -->
-
-    <!-- Instagram Section Begin -->
-    <section class="instagram spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 p-0">
-                    <div class="instagram__text">
-                        <div class="section-title">
-                            <span>Follow us on instagram</span>
-                            <h2>Sweet moments are saved as memories.</h2>
-                        </div>
-                        <h5><i class="fa fa-instagram"></i> @sweetcake</h5>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <div class="instagram__pic">
-                                <img src="static/img/instagram/instagram-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <div class="instagram__pic middle__pic">
-                                <img src="static/img/instagram/instagram-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <div class="instagram__pic">
-                                <img src="static/img/instagram/instagram-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <div class="instagram__pic">
-                                <img src="static/img/instagram/instagram-4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <div class="instagram__pic middle__pic">
-                                <img src="static/img/instagram/instagram-5.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                            <div class="instagram__pic">
-                                <img src="static/img/instagram/instagram-3.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Instagram Section End -->
-
-    <!-- Map Begin -->
-    <div class="map">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-7">
-                    <div class="map__inner">
-                        <h6>COlorado</h6>
-                        <ul>
-                            <li>1000 Lakepoint Dr, Frisco, CO 80443, USA</li>
-                            <li>Sweetcake@support.com</li>
-                            <li>+1 800-786-1000</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="map__iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10784.188505644011!2d19.053119335158936!3d47.48899529453826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1543907528304" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-    </div>
-    <!-- Map End -->
-
-    <!-- Footer Section Begin -->
-    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>WORKING HOURS</h6>
-                        <ul>
-                            <li>Monday - Friday: 08:00 am – 08:30 pm</li>
-                            <li>Saturday: 10:00 am – 16:30 pm</li>
-                            <li>Sunday: 10:00 am – 16:30 pm</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__about">
-                        <div class="footer__logo">
-                            <a href="#"><img src="static/img/footer-logo.png" alt=""></a>
-                        </div>
-                        <p>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore dolore magna aliqua.</p>
-                        <div class="footer__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="footer__newslatter">
-                        <h6>Subscribe</h6>
-                        <p>Get latest updates and offers.</p>
-                        <form action="#">
-                            <input type="text" placeholder="Email">
-                            <button type="submit"><i class="fa fa-send-o"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <p class="copyright__text text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                      </p>
-                  </div>
-                  <div class="col-lg-5">
-                    <div class="copyright__widget">
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Site Map</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer Section End -->
-
-<!-- Search Begin -->
-<div class="search-model">
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch">+</div>
-        <form class="search-model-form">
-            <input type="text" id="search-input" placeholder="Search here.....">
-        </form>
-    </div>
-</div>
-<!-- Search End -->
-
-<!-- Js Plugins -->
-<script src="static/js/jquery-3.3.1.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
-<script src="static/js/jquery.nice-select.min.js"></script>
-<script src="static/js/jquery.barfiller.js"></script>
-<script src="static/js/jquery.magnific-popup.min.js"></script>
-<script src="static/js/jquery.slicknav.js"></script>
-<script src="static/js/owl.carousel.min.js"></script>
-<script src="static/js/jquery.nicescroll.min.js"></script>
-<script src="static/js/main.js"></script>
-=======
-<html>
-
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>ChocoLux</title>
-
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!--slick slider stylesheet -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
-  <!-- slick slider -->
-
-  <link rel="stylesheet" href="css/slick-theme.css" />
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
+    <!-- Template Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="main_body_content">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>CakeZone</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="" class="nav-item nav-link">About Us</a>
+                <a href="logn" class="nav-item nav-link">Login</a>
+                <a href="user_reg" class="nav-item nav-link">User Registration</a>
+            </div>
 
-    <div class="hero_area">
-      <!-- header section strats -->
-      <header class="header_section">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              ChocoLux
-            </a>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
+        </div>
+    </nav>
 
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="chocolate.html">Chocolates</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Testimonial</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-              <div class="quote_btn-container">
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-                <a href="">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <!-- end header section -->
-      <!-- slider section -->
-      <section class="slider_section ">
-        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="detail_box">
-                      <h1>
-                        Chocolate <br>
-                        <span>
-                          Yummy
-                        </span>
-                      </h1>
-                      <a href="#">
-                        <span>
-                          Read More
-                        </span>
-                        <img src="images/white-arrow.png" alt="">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ml-auto">
-                    <div class="img-box">
-                      <img src="images/slider-img.png" alt="">
-                    </div>
-                  </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid  py-5 mb-5 hero-header">
+        <img class="position-absolute w-100 h-100" src="/static/img/hero.jpg" style="object-fit: cover;">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+
+
+                    <h1 class="display-1 text-uppercase text-white mb-4">CakeZone</h1>
+                    <h1 class="text-uppercase text-white">The Best Cake In London</h1>
+
                 </div>
-              </div>
             </div>
-            <div class="carousel-item ">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="detail_box">
-                      <h1>
-                        Chocolate <br>
-                        <span>
-                          Yummy
-                        </span>
-                      </h1>
-                      <a href="#">
-                        <span>
-                          Read More
-                        </span>
-                        <img src="images/white-arrow.png" alt="">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ml-auto">
-                    <div class="img-box">
-                      <img src="images/slider-img.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="detail_box">
-                      <h1>
-                        Chocolate <br>
-                        <span>
-                          Yummy
-                        </span>
-                      </h1>
-                      <a href="#">
-                        <span>
-                          Read More
-                        </span>
-                        <img src="images/white-arrow.png" alt="">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ml-auto">
-                    <div class="img-box">
-                      <img src="images/slider-img.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="carousel_btn-box">
-          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
-            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </section>
-      <!-- end slider section -->
     </div>
+    <!-- Hero End -->
 
-    <!-- about section -->
 
-    <section class="about_section layout_padding ">
-      <div class="container  ">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  About Our Company
-                </h2>
-              </div>
-              <p>
-                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their default model text, </p>
-              <a href="#">
-                <span>
-                  Read More
-                </span>
-                <img src="images/color-arrow.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/about-img.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
 
-    <!-- end about section -->
-
-    <!-- chocolate section -->
-
-    <section class="chocolate_section ">
-      <div class="container">
-        <div class="heading_container">
-          <h2>
-            Our chocolate products
-          </h2>
-          <p>
-            Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their
-          </p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="chocolate_container">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/chocolate1.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6>
-                Yummy <span>chocolate</span>
-              </h6>
-              <h5>
-                $5.0
-              </h5>
-              <a href="">
-                BUY NOW
-              </a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="img-box">
-              <img src="images/chocolate2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6>
-                Yummy <span>chocolate</span>
-              </h6>
-              <h5>
-                $5.0
-              </h5>
-              <a href="">
-                BUY NOW
-              </a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="img-box">
-              <img src="images/chocolate3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6>
-                Yummy <span>chocolate</span>
-              </h6>
-              <h5>
-                $5.0
-              </h5>
-              <a href="">
-                BUY NOW
-              </a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="img-box">
-              <img src="images/chocolate1.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6>
-                Yummy <span>chocolate</span>
-              </h6>
-              <h5>
-                $5.0
-              </h5>
-              <a href="">
-                BUY NOW
-              </a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="img-box">
-              <img src="images/chocolate2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6>
-                Yummy <span>chocolate</span>
-              </h6>
-              <h5>
-                $5.0
-              </h5>
-              <a href="">
-                BUY NOW
-              </a>
-            </div>
-          </div>
-          <div class="box">
-            <div class="img-box">
-              <img src="images/chocolate3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h6>
-                Yummy <span>chocolate</span>
-              </h6>
-              <h5>
-                $5.0
-              </h5>
-              <a href="">
-                BUY NOW
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end chocolate section -->
-
-    <!-- offer section -->
-
-    <section class="offer_section layout_padding">
-      <div class="container">
-        <div class="box">
-          <div class="detail-box">
-            <h2>
-              Offers on chocolates
-            </h2>
-            <h3>
-              Get 5% Offer <br>
-              any Chocolate items
-            </h3>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-          <div class="img-box">
-            <img src="images/offer-img.png" alt="">
-          </div>
-        </div>
-        <div class="btn-box">
-          <a href="">
-            <span>
-              See More
-            </span>
-            <img src="images/color-arrow.png" alt="">
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- end offer section -->
-
-    <!-- client section -->
-
-    <section class="client_section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <div class="img-box sub_img-box">
-              <img src="images/client-chocolate.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 px-0">
-            <div class="client_container">
-              <div class="heading_container">
-                <h2>
-                  Testimonial
-                </h2>
-              </div>
-              <div id="customCarousel2" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="box">
-                      <div class="img-box">
-                        <img src="images/client-img.jpg" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h4>
-                          Gero Miliya
-                        </h4>
-                        <p>
-                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="box">
-                      <div class="img-box">
-                        <img src="images/client-img.jpg" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h4>
-                          Gero Miliya
-                        </h4>
-                        <p>
-                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="box">
-                      <div class="img-box">
-                        <img src="images/client-img.jpg" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h4>
-                          Gero Miliya
-                        </h4>
-                        <p>
-                          long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it haslong established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="carousel_btn-box">
-                  <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
-                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- end client section -->
-
-
-    <!-- contact section -->
-
-    <section class="contact_section layout_padding">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
-            <div class="form_container">
-              <div class="heading_container">
-                <h2>
-                  Contact Us
-                </h2>
-              </div>
-              <form action="">
-                <div>
-                  <input type="text" placeholder="Full Name " />
-                </div>
-                <div>
-                  <input type="text" placeholder="Phone number" />
-                </div>
-                <div>
-                  <input type="email" placeholder="Email" />
-                </div>
-                <div>
-                  <input type="text" class="message-box" placeholder="Message" />
-                </div>
-                <div class="d-flex ">
-                  <button>
-                    SEND NOW
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6  px-0">
-            <div class="map_container">
-              <div class="map">
-                <div id="googleMap"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end contact section -->
-
-
-    <!-- info section -->
-    <section class="info_section layout_padding2">
-      <div class="container">
-        <div class="row info_form_social_row">
-          <div class="col-md-8 col-lg-9">
-            <div class="info_form">
-              <form action="">
-                <input type="email" placeholder="Enter your email">
-                <button>
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row info_main_row">
-          <div class="col-md-6 col-lg-3">
-            <div class="info_links">
-              <h4>
-                Menu
-              </h4>
-              <div class="info_links_menu">
-                <a href="index.html">
-                  Home
-                </a>
-                <a href="about.html">
-                  About
-                </a>
-                <a href="chocolate.html">
-                  Chocolates
-                </a>
-                <a href="testimonial.html">
-                  Testimonial
-                </a>
-                <a href="contact.html">
-                  Contact us
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_insta">
-              <h4>
-                Instagram
-              </h4>
-              <div class="insta_box">
-                <div class="img-box">
-                  <img src="images/insta-img.png" alt="">
-                </div>
-                <p>
-                  long established fact that a reader
-                </p>
-              </div>
-              <div class="insta_box">
-                <div class="img-box">
-                  <img src="images/insta-img.png" alt="">
-                </div>
-                <p>
-                  long established fact that a reader
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_detail">
-              <h4>
-                Company
-              </h4>
-              <p class="mb-0">
-                when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h4>
-              Contact Us
-            </h4>
-            <div class="info_contact">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end info_section -->
-
-  </div>
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <div class="container">
-      <div class="col-md-11 col-lg-8 mx-auto">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
-        </p>
-      </div>
     </div>
-  </footer>
-  <!-- footer section -->
+    <!-- Video Modal End -->
 
-  <!-- jQery -->
-  <script  src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script  src="js/bootstrap.js"></script>
-  <!-- slick slider -->
-  <script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-  <!-- custom js -->
-  <script  src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
 
->>>>>>> b748a6e0035f4cb95b6452ce4e418f6020472bea
+    <!-- About Start -->
+    <br><br>
+    <br>
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="/static/img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <h4 class="mb-4">Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem sed stet labore lorem sit clita duo</h4>
+                    <p class="mb-5">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet magna</p>
+                    <div class="row g-5">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
+                                <i class="fa fa-heartbeat fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">100% Healthy</h4>
+                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
+                                <i class="fa fa-award fa-2x text-white"></i>
+                            </div>
+                            <h4 class="text-uppercase">Award Winning</h4>
+                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid bg-img py-5 mb-5">
+        <div class="container py-5">
+            <div class="row gx-5 gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-star text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Our Experience</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Cake Specialist</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Complete Project</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex">
+                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-mug-hot text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h6 class="text-primary text-uppercase">Happy Clients</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid about py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">Menu & Pricing</h2>
+                <h1 class="display-4 text-uppercase">Explore Our Cakes</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Birthday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Wedding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Custom</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Birthday Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Birthday Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Birthday Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Birthday Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Birthday Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Birthday Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Wedding Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Wedding Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Wedding Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Wedding Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Wedding Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Wedding Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Custom Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Custom Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Custom Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Custom Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Custom Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="/static/img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">Custom Cake</h5>
+                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service position-relative px-5 mt-5" style="margin-bottom: 135px;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Birthday Cake</h4>
+                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Wedding Cake</h4>
+                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Custom Cake</h4>
+                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 text-center">
+                    <h1 class="text-uppercase text-light mb-4">30% Discount For This Summer</h1>
+                    <a href="" class="btn btn-primary border-inner py-3 px-5">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Start -->
+
+
+    <!-- Team Start -->
+
+
+
+    <!-- Offer Start -->
+
+
+    <div class="container-fluid text-secondary py-4" style="background: #111111;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/counterup/counterup.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
 </body>
 
 </html>

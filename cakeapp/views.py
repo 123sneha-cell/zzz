@@ -1,5 +1,4 @@
 import os
-
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, logout
@@ -92,7 +91,8 @@ def edit_profile(request):
                 os.remove(q.image.path)
                 q.photo = request.FILES['img']
         q.save()
-        return HttpResponse('Updated Success')
+        return HttpResponse('<script>alert("Successfully updated"),window.location="/edit_profile";</script>')
+
     return render(request,'edit_profile.html',{'u':q})
 def user_view_cakes(request):
     c=Cake.objects.all()

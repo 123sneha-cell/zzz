@@ -2,11 +2,11 @@
 
 {% block content %}
 <center>
-<table style="margin-top:70px;">
+
 <form method="post" action="edit_profile" enctype="multipart/form-data" >
 
     {% csrf_token %}
-    <table>
+    <table class="table table-striped" style="width:50%;">
         <tr>
             <th>Username</th>
             <td><input type="text" name="uname" value="{{u.username}}" class="form-control"></td>
