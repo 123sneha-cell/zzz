@@ -1,0 +1,29 @@
+{% extends 'ahome.html' %}
+
+{% block content %}
+<center>
+    <table class="table table-striped" style="margin-top:70px;">
+        <tr>
+            <th>Firstname</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Place</th>
+            <th>Photo</th>
+            <th>Address</th>
+        </tr>
+        {% for i in q %}
+        <tr>
+            <td>{{i.firstname}}</td>
+            <td>{{i.gender}}</td>
+            <td>{{i.phone}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.place}}</td>
+            <td><img src="{{i.photo.url}}" alt="photo"  height="100" width="100"></td>
+            <td>{{i.address}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+{% endblock content %}

@@ -1,0 +1,41 @@
+{% extends 'ahome.html' %}
+
+{% block content %}
+<center>
+<table class="table table-striped">
+<form method="post"  enctype="multipart/form-data" style="margin-top:70px;">
+
+    {% csrf_token %}
+    <table>
+
+        <tr>
+            <th>Cake</th>
+            <td><input type="text" name="cname" value="{{c.cake_name}}" class="form-control"></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td><input type="number" name="qntity" value="{{c.quantity}}" class="form-control"></td>
+        </tr>
+        <tr>
+            <th>Flavour</th>
+            <td><input type="text" name="flvr" value="{{c.flavour}}" class="form-control"></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><input type="number" name="prc" value="{{c.price}}" class="form-control"></td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><img src="{{c.image.url}}" alt="photo"  height="100" width="100" class="form-control"></td>
+            <td><input type="file" name="img" class="form-control" value="{{c.image}}"></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="ADD"></td>
+        </tr>
+    </table>
+
+</form>
+</table>
+</center>
+{% endblock content %}
