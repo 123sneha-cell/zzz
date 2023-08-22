@@ -2,7 +2,8 @@ import os
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, logout
-from cakeapp.models import Cake,User
+from cakeapp.models import Cake,tbl_User
+from django.contrib.auth.models import User
 # Create your views here.
 def home(request):
     return render(request,'index.html')
@@ -14,18 +15,20 @@ def logn(request):
         p=request.POST['pass']
         au=authenticate(username=user_id,password=p)
         request.session['user_id']=user_id
-        if au is not None:
+        if au is not None and au.is_superuser==1:
             return redirect('/adminHome')
-        
+        elif au is not None and au.is_superuser==0:
+             return redirect('/userHome')
         else:
-            q=User.objects.get(user_id=user_id)
-            if q.email==p:
-                
-                return render(request,'uhome.html')
+          
             return HttpResponse("User does not exist")
     return render(request,'login.html')
 def adminHome(request):
      return render(request,'admin_home.html')
+def userHome(request):
+     a=request.session['user_id']
+     data=tbl_User.objects.get(username=a)
+     return render(request,'uhome.html',{'x':data})
 def user_reg(request):
     if request.method=='POST':
         z=request.POST['uname']
@@ -36,7 +39,12 @@ def user_reg(request):
         e=request.POST['plc']
         f = request.FILES['img']
         g=request.POST['addrs']
-        q=User(username=z,firstname=a,gender=b,phone=c,email=d,place=e,photo=f,address=g)
+        
+        q=tbl_User(username=z,firstname=a,gender=b,phone=c,email=d,place=e,photo=f,address=g)
+        data=User(username=z,first_name=a,email=d)
+        data.set_password("qwerty")
+
+        data.save()
         q.save()
         return HttpResponse("added")
     return render(request,'user_registration.html')
@@ -81,7 +89,7 @@ def cake_delete(request,id):
 
 def edit_profile(request):
     id=request.session['member_id']
-    q=User.objects.get(id=id)
+    q=tbl_User.objects.get(id=id)
     if request.method == 'POST':
         q.username=request.POST['uname']
         q.firstname=request.POST['fname']
@@ -111,7 +119,7 @@ def more(request):
     return render(request,'more.html',{'c':q})
 
 def admin_view_user(request):
-    u=User.objects.all()
+    u=tbl_User.objects.all()
     return render(request,'admin_view_user.html',{'q':u})
 def logut(request):
     logout(request)

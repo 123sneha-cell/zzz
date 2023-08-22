@@ -8,7 +8,7 @@ class Cake(models.Model):
     price=models.IntegerField()
     image=models.FileField()
 
-class User(models.Model):
+class tbl_User(models.Model):
     username=models.CharField(max_length=100)
     firstname=models.CharField(max_length=100)
     gender=models.CharField(max_length=100)
