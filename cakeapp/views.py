@@ -10,19 +10,22 @@ def main_home(request):
     return render(request,'index.html')
 def logn(request):
     if request.method=='POST':
-        u=request.POST['uname']
+        user_id=request.POST['uname']
         p=request.POST['pass']
-        au=authenticate(username=u,password=p)
+        au=authenticate(username=user_id,password=p)
+        request.session['user_id']=user_id
         if au is not None:
-            return render(request,'admin_home.html')
+            return redirect('/adminHome')
+        
         else:
-            q=User.objects.get(username=u)
+            q=User.objects.get(user_id=user_id)
             if q.email==p:
-                request.session['member_id']=q.id
+                
                 return render(request,'uhome.html')
             return HttpResponse("User does not exist")
     return render(request,'login.html')
-
+def adminHome(request):
+     return render(request,'admin_home.html')
 def user_reg(request):
     if request.method=='POST':
         z=request.POST['uname']
@@ -101,7 +104,7 @@ def user_view_cakes(request):
 def search(request):
     if request.method=='POST':
         a=request.POST['flv']
-        q=Cake.objects.get(flavour=a)
+        q=Cake.objects.filter(flavour=a)
     return render(request,'user_view_cakes.html',{'s':q})
 def more(request):
     q=Cake.objects.all()

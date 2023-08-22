@@ -13,5 +13,6 @@ urlpatterns=[
     path('user_view_cakes',views.user_view_cakes,name='user_view_cakes'),
     path('search',views.search,name='search'),
     path('more',views.more,name='more'),
+     path('adminHome',views.adminHome,name='adminHome'),
     path('admin_view_user',views.admin_view_user,name='admin_view_user')
 ]
