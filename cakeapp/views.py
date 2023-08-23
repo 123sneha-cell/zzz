@@ -4,6 +4,8 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, logout
 from cakeapp.models import Cake,tbl_User
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
+from django.views.decorators.cache import cache_control
 # Create your views here.
 def home(request):
     return render(request,'index.html')
@@ -38,12 +40,11 @@ def user_reg(request):
         d=request.POST['eml']
         e=request.POST['plc']
         f = request.FILES['img']
-        g=request.POST['addrs']
+        g=request.POST['adr']
         
         q=tbl_User(username=z,firstname=a,gender=b,phone=c,email=d,place=e,photo=f,address=g)
         data=User(username=z,first_name=a,email=d)
         data.set_password("qwerty")
-
         data.save()
         q.save()
         return HttpResponse('<script>alert("Registration success"),window.location="/user_reg";</script>')
@@ -74,10 +75,12 @@ def cake_update(request,id):
         q.quantity=request.POST['qntity']
         q.flavour=request.POST['flvr']
         q.price=request.POST['prc']
+
         if len(request.FILES) != 0:
             if len(q.image) > 0:
                 os.remove(q.image.path)
                 q.image = request.FILES['img']
+        q.address = request.POST['addr']
         q.save()
         return HttpResponse('<script>alert("Successfully updated"),window.location="/cake_view";</script>')
     return render(request,'update_cake.html',{'c':q})
@@ -101,6 +104,7 @@ def edit_profile(request):
             if len(q.image) > 0:
                 os.remove(q.image.path)
                 q.photo = request.FILES['img']
+        q.address=request.POST['adr']
         q.save()
         return HttpResponse('<script>alert("Successfully updated"),window.location="/edit_profile";</script>')
 
@@ -114,6 +118,7 @@ def search(request):
         a=request.POST['flv']
         q=Cake.objects.filter(flavour=a)
     return render(request,'user_view_cakes.html',{'s':q})
+@cache_control(no_cache=True, must_revalidate=True)
 def more(request):
     q=Cake.objects.all()
     return render(request,'more.html',{'c':q})
@@ -121,6 +126,7 @@ def more(request):
 def admin_view_user(request):
     u=tbl_User.objects.all()
     return render(request,'admin_view_user.html',{'q':u})
+@cache_control(no_cache=True, must_revalidate=True)
 def logut(request):
     logout(request)
     redirect(main_home)

@@ -2,7 +2,12 @@
 
 {% block content %}
 <center>
-
+<script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
 <form method="post" action="edit_profile" enctype="multipart/form-data" >
 
     {% csrf_token %}
@@ -38,7 +43,7 @@
         </tr>
         <tr>
             <th>Address</th>
-            <td><input type="text" name="addr" value="{{u.address}}" class="form-control"></td>
+            <td><input type="text" name="adr" value="{{u.address}}" class="form-control"></td>
         </tr>
         <tr>
 

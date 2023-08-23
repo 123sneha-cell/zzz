@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f40ea323-6254-46c9-a462-a2988b6ee0c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cakeapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cakeapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cakeapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cakeapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_add_cakes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_add_cakes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,7 @@
   </component>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4865a17ad8bc148408cd50ffa96c43ec15cbc11
   <component name="PropertiesComponent">{
@@ -73,11 +73,14 @@
   }
 }</component>
 =======
+=======
+>>>>>>> f953ebc839cdeba550fe92d8da71666854ac4b43
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/sneha/zzz-main"
   }
@@ -88,6 +91,12 @@
   }
 }</component>
 >>>>>>> d4865a17ad8bc148408cd50ffa96c43ec15cbc11
+=======
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/sneha/zzz-main"
+  }
+}]]></component>
+>>>>>>> f953ebc839cdeba550fe92d8da71666854ac4b43
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sneha2\sneha\cakeshop\static" />
