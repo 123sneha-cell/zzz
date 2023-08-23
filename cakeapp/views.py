@@ -46,7 +46,8 @@ def user_reg(request):
 
         data.save()
         q.save()
-        return HttpResponse("added")
+        return HttpResponse('<script>alert("Successfully Added"),window.location="/logn";</script>')
+    #     return HttpResponse("added")
     return render(request,'user_registration.html')
 
 def admin_add_cake(request):
