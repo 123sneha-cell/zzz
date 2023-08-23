@@ -1,0 +1,31 @@
+{% extends 'ahome.html' %}
+
+{% block content %}
+<center>
+
+
+{% if c %}
+<table class="table table-striped" style="width:85%;">
+    <tr>
+        <th>Cake</th>
+        <th>Quantity</th>
+        <th>Flavour</th>
+        <th>Price</th>
+        <th>Photo</th>
+    </tr>
+    {% for i in c %}
+    <tr>
+        <td>{{i.cake_name}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.flavour}}</td>
+        <td>{{i.price}}</td>
+        <td><img src="{{i.image.url}}" alt="photo"  height="100" width="100"></td>
+        <td><a href="/update/{{i.id}}" class="btn btn-success">Edit</a></td>
+        <td><a href="/cake_delete/{{i.id}}" class="btn btn-danger">Remove</a></td>
+    </tr>
+    {% endfor %}
+</table>
+    {% endif %}
+    </center>
+
+{% endblock content %}

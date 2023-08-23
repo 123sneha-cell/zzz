@@ -64,7 +64,7 @@ def admin_add_cake(request):
 
 def cake_view(request):
     q=Cake.objects.all()
-    return render(request,'admin_add_cakes.html',{'c':q})
+    return render(request,'admin_view_cake.html',{'c':q})
 def cake_update(request,id):
     cid=id
     q=Cake.objects.get(id=cid)
@@ -88,8 +88,8 @@ def cake_delete(request,id):
     return HttpResponse('<script>alert("Successfully deleted"),window.location="/cake_view";</script>')
 
 def edit_profile(request):
-    id=request.session['member_id']
-    q=tbl_User.objects.get(id=id)
+    id=request.session['user_id']
+    q=tbl_User.objects.get(username=id)
     if request.method == 'POST':
         q.username=request.POST['uname']
         q.firstname=request.POST['fname']
