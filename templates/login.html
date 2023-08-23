@@ -2,6 +2,12 @@
 
 {% block content %}
 <center>
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
 <form method="post"  style="margin-top:70px;">
     {% csrf_token %}
     <table>

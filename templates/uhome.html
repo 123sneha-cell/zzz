@@ -42,8 +42,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto mx-lg-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">eeeee</a>
-                <a href="edit_profile" class="nav-item nav-link">Profilr</a>
+                <a href="userHome" class="nav-item nav-link active">Home</a>
+                <a href="edit_profile" class="nav-item nav-link">Profile</a>
                 <a href="user_view_cakes" class="nav-item nav-link">Cake</a>
 
                 <a href="main_home" class="nav-item nav-link">Logout</a>
@@ -57,7 +57,16 @@
 
     <!-- Hero Start -->
 
+<script>
+    function preventBack() {
+        window.history.forward();
+    }
 
+    setTimeout("preventBack()", 0);
+    window.onunload = function() {
+        null
+    };
+</script>
 
 
     {% block content %}
