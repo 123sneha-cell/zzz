@@ -3,6 +3,10 @@
 {% block content %}
 <h3><a href="more">Above 2000 cakes</a></h3>
 <center>
+<<<<<<< HEAD
+=======
+    {% if q %}
+>>>>>>> 3ff1df744c9a879dc42bf280ca1f605648f34b62
     <table class="table table-striped" style="width:50%;">
 <form method="post" action="search">
     {% csrf_token %}
@@ -21,7 +25,11 @@
     </tr>
 </form>
         </table>
+<<<<<<< HEAD
 {% if q %}
+=======
+
+>>>>>>> 3ff1df744c9a879dc42bf280ca1f605648f34b62
 <table class="table table-striped" style="width:50%;">
     <tr>
         <th>Cake</th>
@@ -43,9 +51,16 @@
     {% endfor %}
 </table>
 {% endif %}
+<<<<<<< HEAD
 
 <table class="table table-striped" style="width:50%;">
     {% if s %}
+=======
+{% if s %}
+
+<table class="table table-striped" style="width:50%;">
+
+>>>>>>> 3ff1df744c9a879dc42bf280ca1f605648f34b62
     <tr>
         <th>Cake</th>
 
@@ -54,6 +69,7 @@
         <th>Flavour</th>
         <th>Price</th>
     </tr>
+<<<<<<< HEAD
 
     <tr>
         <td>{{s.cake_name}}</td>
@@ -63,6 +79,18 @@
         <td><a href="">Order</a></td>
 
     </tr>
+=======
+{% for i in s %}
+    <tr>
+        <td>{{i.cake_name}}</td>
+        <td>{{i.quantity}}</td>
+        <td>{{i.flavour}}</td>
+        <img src="{{i.image.url}}" alt="photo"  height="300" width="250">
+        <td><a href="">Order</a></td>
+
+    </tr>
+    {% endfor %}
+>>>>>>> 3ff1df744c9a879dc42bf280ca1f605648f34b62
 
 </table>
 {% endif %}

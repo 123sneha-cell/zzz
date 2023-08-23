@@ -46,8 +46,7 @@ def user_reg(request):
 
         data.save()
         q.save()
-        return HttpResponse('<script>alert("Successfully Added"),window.location="/logn";</script>')
-    #     return HttpResponse("added")
+        return HttpResponse('<script>alert("Registration success"),window.location="/user_reg";</script>')
     return render(request,'user_registration.html')
 
 def admin_add_cake(request):
@@ -59,7 +58,11 @@ def admin_add_cake(request):
         e=request.FILES['img']
         q=Cake(cake_name=a,quantity=b,flavour=c,price=d,image=e)
         q.save()
+<<<<<<< HEAD
         return HttpResponse('<script>alert("Successfully Added"),window.location="/cake_view";</script>')
+=======
+        return HttpResponse('<script>alert("Successfully Added"),window.location="/add";</script>')
+>>>>>>> 3ff1df744c9a879dc42bf280ca1f605648f34b62
 
     return render(request,'admin_add_cakes.html')
 
