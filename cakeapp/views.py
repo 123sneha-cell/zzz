@@ -58,17 +58,13 @@ def admin_add_cake(request):
         e=request.FILES['img']
         q=Cake(cake_name=a,quantity=b,flavour=c,price=d,image=e)
         q.save()
-<<<<<<< HEAD
         return HttpResponse('<script>alert("Successfully Added"),window.location="/cake_view";</script>')
-=======
-        return HttpResponse('<script>alert("Successfully Added"),window.location="/add";</script>')
->>>>>>> 3ff1df744c9a879dc42bf280ca1f605648f34b62
 
     return render(request,'admin_add_cakes.html')
 
 def cake_view(request):
     q=Cake.objects.all()
-    return render(request,'admin_add_cakes.html',{'c':q})
+    return render(request,'admin_view_cake.html',{'c':q})
 def cake_update(request,id):
     cid=id
     q=Cake.objects.get(id=cid)
@@ -92,8 +88,8 @@ def cake_delete(request,id):
     return HttpResponse('<script>alert("Successfully deleted"),window.location="/cake_view";</script>')
 
 def edit_profile(request):
-    id=request.session['member_id']
-    q=tbl_User.objects.get(id=id)
+    id=request.session['user_id']
+    q=tbl_User.objects.get(username=id)
     if request.method == 'POST':
         q.username=request.POST['uname']
         q.firstname=request.POST['fname']

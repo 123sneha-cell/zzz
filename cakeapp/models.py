@@ -9,6 +9,7 @@ class Cake(models.Model):
     image=models.FileField()
 
 class tbl_User(models.Model):
+
     username=models.CharField(max_length=100)
     firstname=models.CharField(max_length=100)
     gender=models.CharField(max_length=100)
